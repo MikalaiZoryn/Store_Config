@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/store_db
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: 1488
+
+  flyway:
+    failOnMissingLocations: true
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

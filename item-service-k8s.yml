@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/item_db
+    username: postgres
+    password: 1488
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: //eureka-server:8761/eureka/

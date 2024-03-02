@@ -1,9 +1,4 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/order_db
-    username: postgres
-    password: 1488
-
   flyway:
     failOnMissingLocations: true
 
@@ -20,19 +15,3 @@ management:
         include: "*"
 
 server.port: 8002
----
-spring:
-  config:
-    activate.on-profile: local
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
----
-spring:
-  config:
-    activate.on-profile: k8s
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: //eureka-server:8761/eureka/

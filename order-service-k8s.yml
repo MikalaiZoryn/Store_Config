@@ -2,9 +2,9 @@ spring:
   datasource:
     url: jdbc:postgresql://postgres:5432/order_db
     username: postgres
-    password: 1488
+    password: root
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: //eureka-server:8761/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
